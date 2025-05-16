@@ -1,0 +1,38 @@
+h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+#navigation-bar {
+    float: right;
+    position: relative;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu {
+    float: right;
+    height: 30px;
+    width: 30px;
+}
+
+#navigation-bar > div {
+    display: none;
+    height: auto;
+    background-color: cyan;
+    padding: 10px;
+    margin: 40px -20px auto auto;
+    
+}
+
+#nav-options {
+    list-style-type: none;
+    padding: 0;
+}
