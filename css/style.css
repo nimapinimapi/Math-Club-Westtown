@@ -1,11 +1,22 @@
-h3 {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Exile&family=Pacifico&display=swap');
 
 body {
     background-color: lightcyan;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emojis {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
 }
 
 #navigation-bar {
@@ -35,4 +46,6 @@ body {
 #nav-options {
     list-style-type: none;
     padding: 0;
+    width: auto;
 }
+
