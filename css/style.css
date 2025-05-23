@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exile&family=Pacifico&display=swap');
 
-body {
-    background-color: lightcyan;
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -49,3 +45,36 @@ body {
     width: auto;
 }
 
+#result_table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    padding: 40px;
+}
+
+@keyframes weWon {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.we-won {
+    animation: weWon 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#stopWin {
+    margin: auto;
+    display: block;
+}
+
+.news::after {
+    font-size: 20px;
+    font-weight: 20;
+    display: block;
+    text-align: center;
+    content: "Open to Everyone"
+}
