@@ -37,12 +37,35 @@ $("#check3").click(function() {
     }
 });
 
+/* Checking Mechanism for Problem 4 */
+$("#check4").click(function() {
+    $("#problem4 .emojis").css("display", "none");
+    if(document.getElementById("problem4answer").value==15) {
+        $("#checkmark4").css("display", "inline");
+    }
+    else {
+        $("#wrong4").css("display", "inline");
+    }
+});
+
+/* Checking Mechanism for Problem 5 */
+$("#check5").click(function() {
+    $("#problem5 .emojis").css("display", "none");
+    if(document.getElementById("problem5answer").value==243) {
+        $("#checkmark5").css("display", "inline");
+    }
+    else {
+        $("#wrong5").css("display", "inline");
+    }
+});
+
 
 // Create an animation for the winning scores //
 const tds = document.getElementsByTagName("td");
 
 for (let i = 0; i < tds.length; i++) {
     const cell = tds[i];
+    //Find first character to determine if result is W or L//
     const firstChar = cell.textContent.trim().charAt(0);
 
     if (firstChar === "W") {
