@@ -1,15 +1,24 @@
+/* Import custom font */
 @import url('https://fonts.googleapis.com/css2?family=Exile&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
 
+body {
+    margin: 20px;
+}
+
+/* Set Welcome Message */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Hide Right/Wrong Emojis for problem checking */
 .emojis {
     display: none;
 }
 
+/* Nav Bar animation */
 .rotate {
     transform: rotate(90deg);
     transition: transform 0.3s ease;
@@ -24,16 +33,19 @@
     cursor: pointer;
 }
 
+/* Put Nav bar to the right of the screen */
 #menu {
     float: right;
     height: 30px;
     width: 30px;
 }
 
-#navigation-bar > div {
+/* Content styling inside the nav bar */
+#navigation-bar div {
     display: none;
+    border-radius: 10px;
     height: auto;
-    background-color: cyan;
+    background-color: rgb(156, 199, 230);
     padding: 10px;
     margin: 40px -20px auto auto;
     
@@ -45,20 +57,47 @@
     width: auto;
 }
 
+#nav-options a:link {
+    color: black;
+}
+
+#nav-options a:active {
+    color: green;
+}
+
 #result_table {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#competition-image {
+    width: 60%; 
+    height: 60%; 
+    border-radius: 20px; 
+    filter: sepia(0.5);
+}
+
+#news-border {
+    border: 5px solid red;
+}
+
 td {
     padding: 40px;
 }
 
+
+/* Pulsing animation for wins on our schedule table */
 @keyframes weWon {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
+}
+
+/* About page loading animation */
+@keyframes aboutAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .we-won {
@@ -66,15 +105,38 @@ td {
     animation-iteration-count: infinite;
 }
 
+/* Aligning class that is given to all elements that need to be centered */
+.align {
+    text-align: center;
+    align-items: center;
+}
+
+.decorative-photos {
+    height: 200px; 
+    width: 200px;
+    margin: 30px;
+    margin-bottom: -400px;
+    border-radius: 50%;
+}
+
+/* Stop pulsating animation for scheudle page button */
 #stopWin {
     margin: auto;
     display: block;
 }
 
-.news::after {
+.news {
+    text-align: center;
+}
+
+/* Finals Notification event details */
+#finals-notification::after {
     font-size: 20px;
     font-weight: 20;
     display: block;
     text-align: center;
     content: "Open to Everyone"
 }
+
+
+
